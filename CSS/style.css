@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* overflow-x: hidden; */
+    font-family: "Poppins", sans-serif;
+    background: black;
+}
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+ul {
+    list-style: none ;   
+}
+a{
+    text-decoration: none;
+}
+
+/* %%%%%%%%%%%%%%%%%%%% Main Css Start %%%%%%%%%%%%%%%%%%%%%%%% */
+/* ----------- complete_container css ------------- */
+  /* %%%%%%%%%%%%%%%%%% header logo and nav -- css ----  %%%%%%%%%%%%%%%% */
+  /* humBurger =X toggle */
+#humBurger-menu{
+    color: green;
+    font-size: 3rem;
+    display: none;
+}
+header nav{
+    display:flex;
+    justify-content:space-between;
+}
+header nav .logo{
+    display:flex;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px 1px rgb(107, 100, 100);
+    /* border: 1px solid rgb(238, 255, 0); */
+    width: 10rem;
+    height: 5rem;
+    align-items:center;
+    margin-left: 2rem;
+}
+header nav .logo img{
+    width: 40%;
+}
+header nav .logo h6{
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    margin: 0 0.8rem 0 0 ;
+    color: green;
+}
+header nav .logo h6 span{
+    font-size: 2rem;
+    /* color: red; */
+    color: white;
+}
+header nav ul{
+    display:flex;
+    margin: 0 1rem 0 0;
+}
+header nav ul li{
+   margin:auto  1rem;
+   padding: 0.4rem 1.4rem;   
+   /* border: 1px solid red; */
+   border-radius: 1.2rem;
+   outline: 0;
+   border: 0;   
+}
+header nav ul li a{
+   color: white;
+   font-size: 1.2rem;
+    font-weight: 400;
+}
+header nav ul li:hover,
+header nav ul li.active
+{  
+    background-color:rgb(3, 133, 66);
+}
+/* %%%%%%%%%%%%%%%%%% main hero section text and  banner  -- css ----  %%%%%%%%%%%%%%%% */
+.hero__section{
+    display: flex;
+    /* border: 2px solid blue; */
+    align-items: center;
+}
+/* --------- hero section text ------------- */
+.hero__section section:nth-child(1){
+    margin-left: 2rem;
+}
+.hero__section section h3{
+    color: white;
+    line-height: 2.5rem;
+    font-size: 7rem;
+    font-weight: 900;
+    margin: 3.8rem 0 0 0;
+}
+.hero__section section .text_green{
+    color: rgb(3, 133, 66);
+}
+.hero__section section h1{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-left: 0.5rem;
+    margin: 3rem 0 0 0;
+}
+.hero__section section h6{
+    color: rgb(151, 150, 150);
+    word-spacing: 1px;
+    font-size: 1rem;
+    text-align: left;
+    margin: 1rem 0;
+}
+.hero__section section button{
+    background-color: rgb(3, 133, 66);
+    color: whitesmoke;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    font-size: 1.5rem;
+    margin: 1rem 0  0 0;
+}
+/* --------- hero section banner image ------------- */
+.hero__section section:nth-child(2) {
+    width: 950px;
+    margin-top: 0.7rem;
+}
+.hero__section section .banner{
+    width: 100%;
+}
+/* %%%%%%%%%%%%%%%%%% our services  -- css ----  %%%%%%%%%%%%%%%% */
+/* --------- What We Do h5 h6 text -- css --  ------------- */
+#services .service_section_text{
+    height: 18vh;
+    padding: .5rem 0;
+    background: linear-gradient(to right, rgba(41, 52, 37, 0.591), rgba(26, 26, 26, 0.562));
+}
+#services .service_section_text  h4,h6{
+    text-align: center;
+}
+#services .service_section_text  h4{
+    margin: 0 0 0 1.2rem;
+    font-size: 2.5rem;
+    color: rgba(21, 160, 74, 0.719);
+}
+#services .service_section_text  h6{
+    font-size: 1.3rem;
+    color: white;
+    margin-top: -0.5rem;
+}
+/* ----------- service cards grid system --- css--- */
+#services .services_card{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   justify-content: space-evenly;
+   max-width: 100%;
+   padding: 0.2rem 15.5rem;
+}
+#services .services_card .card{
+    width: 220px;
+    height: 200px;
+    background: linear-gradient(black,rgb(30, 29, 29),rgb(38, 58, 47));
+    margin: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(53, 52, 52);
+    border-radius: 1rem;
+}
+#services .services_card .even_card{
+    background: linear-gradient(rgba(27, 26, 26, 0.852),rgba(23, 19, 19, 0.838));
+}
+#services .services_card .card #img1,
+#services .services_card .card #img2,
+#services .services_card .card #img3,
+#services .services_card .card #img4{
+width: 65%;
+}
+#services .services_card .card #img5,
+#services .services_card .card #img6,
+#services .services_card .card #img7,
+#services .services_card .card #img8{
+width: 45%;
+margin: 1.2rem 0 0 0;
+}
+/* services card h4 Text*/
+#services .services_card .card {
+    color: white;
+    text-align: center;
+}
+/* %%%%%%%%%%%%%%%%%% how we work section  -- css ----  %%%%%%%%%%%%%%%% */
+.How_we_work{
+    margin: 0 0 7rem 0;
+}
+.How_we_work  section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 7rem 0;
+  }
+  .How_we_work h5 {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(16, 168, 130);
+    margin: 2rem 0 ;
+
+  }
+  .How_we_work article {
+    width: 230px;
+    height: 270px;
+  }
+  .How_we_work article .number {
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgb(36, 35, 35);
+    text-align: center;
+    margin: 0 0 -4.5rem 0;
+
+  }
+  .How_we_work article .second_text {
+   margin-left: -3rem;
+  }
+  .How_we_work article .text {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+/* %%%%%%%%%%%%%%%%%% owner section  -- css ----  %%%%%%%%%%%%%%%% */
+
+.owner {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .owner div h6 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+    line-height: 0.5;
+  }
+  .owner div h5 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(41, 206, 151);
+  }
+  .owner .owner_img {
+    width: 550px;
+    height: 350px;
+    background-color: rgb(2, 92, 128);
+  }
+  /* %%%%%%%%%%%%%%%%%% Our Team  section  -- css ----  %%%%%%%%%%%%%%%% */
+  /* --------- OUR TEAM and Meet Expert Team text -- css --  ------------- */
+  #Our_Team_section{
+    margin: 2rem 0 ;
+  }
+  #Our_Team_section .Our_Team_Section_Headline{
+    margin: 2rem 0 ;
+  }
+#Our_Team_section .Our_Team_Section_Headline h6,p{
+    text-align: center;
+}
+#Our_Team_section .Our_Team_Section_Headline h6{
+    margin: 0 0 0 -1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(7, 158, 107);
+}
+#Our_Team_section .Our_Team_Section_Headline p{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: -0.5rem;
+}
+#Our_Team_section .Our_Team_Section_Headline p span{
+    color: rgb(7, 158, 107);
+}
+/* ----------- service cards grid system --- css--- */
+#Our_Team_section .Grid_card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding: 0.2rem 15.5rem;
+ }
+ #Our_Team_section .Grid_card .card{
+     width: 220px;
+     height: 250px;
+     background: rgb(20, 19, 19);
+     margin: 0.5rem;
+     box-sizing: border-box;
+     border-radius: 0.1rem;
+     position: relative;
+ }
+ #Our_Team_section .Grid_card .card #img1,
+ #Our_Team_section .Grid_card .card #img2,
+ #Our_Team_section .Grid_card .card #img3,
+ #Our_Team_section .Grid_card .card #img4{
+ width: 65%;
+ }
+ #Our_Team_section .Grid_card .card #img5,
+ #Our_Team_section .Grid_card .card #img6,
+ #Our_Team_section .Grid_card .card #img7,
+ #Our_Team_section .Grid_card .card #img8{
+ width: 45%;
+ margin: 1.2rem 0 0 0;
+ }
+ /* Our Team Name and their work position */
+ #Our_Team_section .Grid_card .card .Team_Name,
+ #Our_Team_section .Grid_card .card .Team_Work_position {
+   text-align: right;
+   position: absolute;
+   top: 0.5rem;
+   right: 0.3rem;
+   z-index: 10;
+ }
+ #Our_Team_section .Grid_card .card .Team_Name {
+     color: red;
+     /* color: white; */
+     font-size: 1.2rem;
+     font-weight: 500;
+ }
+ #Our_Team_section .Grid_card .card .Team_Work_position {
+    color: rgb(3, 134, 91);
+     font-weight: 600;
+     margin: 1.5rem 0 ;
+ }
+/* %%%%%%%%%%%%%%%%%% Testimonial section  -- css ----  %%%%%%%%%%%%%%%% */  
+#Testimonial_section{
+  margin: 2rem auto;
+}
+#Testimonial_section .Testimonial_Section_Headline h6{
+  /* margin: 0 auto; */
+  font-size: 1.5rem;
+  color: rgb(8, 125, 86);
+  text-align: center;
+}
+#Testimonial_section .Testimonial_Section_Headline img{
+  display: block;
+  margin: 1rem auto;
+}
+/* slider */
+#Testimonial_section .Testimonial_slider_container {
+  position: relative;
+  /* width: 150%; */
+  min-width: 62%;
+  min-height: 70vh;
+  max-width: 800px;
+  overflow: hidden;
+  top: 5%;
+  margin: auto;
+  /* background-color: rgb(0, 234, 255); */
+  border: 5px solid red;
+}
+
+#Testimonial_section .Testimonial_slider_container .slider {
+  display: flex;
+  transition: transform 0.5s;
+  border: 1px solid rgb(163, 179, 19);
+  margin: 1rem;
+}
+
+#Testimonial_section .Testimonial_slider_container .slide {
+  /* flex: 0 0 100px; */
+  min-width: 250px;
+  height: 300px;
+  background: linear-gradient(
+    rgb(20, 20, 20),
+    rgb(80, 78, 78),
+    rgb(11, 37, 28)
+  );
+  border: 1px solid rgb(19, 179, 89);
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  margin: 1rem;
+}
+
+#Testimonial_section .Testimonial_slider_container .slide.active {
+  /* transform: scale(1.1); */
+  background: linear-gradient(
+    rgb(11, 37, 28),
+    rgb(80, 78, 78),
+    rgb(20, 20, 20)
+  );
+  /* flex: 0 0 120px; */
+  /* min-width: 270px; */
+  /* height: 320px; */
+}
+
+#Testimonial_section .Testimonial_slider_container .slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 100;
+}
+
+#Testimonial_section .Testimonial_slider_container .dot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 0.5px solid black;
+}
+
+#Testimonial_section .Testimonial_slider_container .dot.active {
+  width: 20px;
+  /*     height: 10px; */
+  background: rgb(31, 128, 81);
+  border-radius: 10px;
+}
+/* %%%%%%%%%%%%%%%%%% our Client slider  section  -- css ----  %%%%%%%%%%%%%%%% */  
+#Our_Client_section{
+  margin: 2rem auto;
+}
+#Our_Client_section .Our_Client_Section_Headline h6{
+  /* margin: 0 auto; */
+  font-size: 1.5rem;
+  color: rgb(8, 125, 86);
+  text-align: center;
+}
+#Our_Client_section .Our_Client_Section_Headline p{
+  /* margin: 0 auto; */
+  /* font-size: 2rem; */
+  color: white;
+  text-align: center;
+}
+/* slider  */
+#Our_Client_section .Client_slider_container {
+  position: relative;
+  /* width: 150%; */
+  min-width: 62%;
+  min-height: 70vh;
+  max-width: 800px;
+  overflow: hidden;
+  top: 5%;
+  margin: auto;
+  /* background-color: rgb(0, 234, 255); */
+  border: 5px solid red;
+}
+
+#Our_Client_section .Client_slider_container .our_client_slider {
+  display: flex;
+  transition: transform 0.5s;
+  border: 1px solid rgb(163, 179, 19);
+  margin: 1rem;
+}
+
+#Our_Client_section .Client_slider_container .our_client_slide {
+  /* flex: 0 0 100px; */
+  min-width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    rgb(20, 20, 20),
+    rgb(80, 78, 78),
+    rgb(11, 37, 28)
+  );
+  border: 1px solid rgb(19, 179, 89);
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  margin: 1rem;
+}
+
+#Our_Client_section .Client_slider_container .our_client_slide.active {
+  transform: scale(1.2);
+  background: linear-gradient(
+    rgb(11, 37, 28),
+    rgb(80, 78, 78),
+    rgb(20, 20, 20)
+  );
+  flex: 0 0 120px;
+  /* min-width: 270px; */
+  /* height: 320px; */
+}
+
+#Our_Client_section .Client_slider_container .slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 100;
+}
+
+#Our_Client_section .Client_slider_container .our_client_slider_dot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 0.5px solid black;
+}
+
+#Our_Client_section .Client_slider_container .our_client_slider_dot.active {
+  width: 20px;
+  /*     height: 10px; */
+  background: rgb(208, 255, 0);
+  border-radius: 10px;
+}
+/* %%%%%%%%%%%%%%%%%% footer section  -- css ----  %%%%%%%%%%%%%%%% */  
+/* footer logo */
+footer{
+    margin: 4rem 0 2rem  4rem;
+}
+/* footer logo */
+footer .footer_logo{
+    margin: 2rem 0 2rem 2rem ;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+footer .footer_logo img{
+    width: 45%;
+}
+footer .footer_logo h6{
+    color: rgb(51, 209, 11);
+    font-size: 2.5rem;
+    /* letter-spacing: 0.2rem; */
+}
+footer .footer_logo h6 span{
+    color: white;
+    margin-left: 0.4rem;
+}
+/* footer logo end */
+/* footer link start */
+footer .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0rem 0 0rem -2.5rem ;
+}
+.footer_col{
+  width: 10%;
+}
+footer h4 {
+    color: rgb(51, 209, 11);
+    font-size: 1.2rem;
+  }
+  footer ul {
+    list-style: none;
+  }
+  /* footer ul li {
+  } */
+  footer ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* color: white; */
+    font-weight: 500;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  footer ul li a:hover {
+    color: grey;
+    border-bottom: 1px solid green;
+  }
+  /* contacts box in footer */
+  footer section {
+    padding: 1rem 1rem 0 0 ;
+    margin: 1rem;
+    text-align: right;
+    width: auto;
+  }
+  footer section address {
+    color: white;
+  }
+  footer .contact_info_footer_section  {
+    background: linear-gradient(black,rgb(30, 29, 29),rgb(30, 29, 29),rgb(33, 65, 47));
+    border-radius: 50px 5px ;
+  }
+  footer .contact_info_footer_section  .align_right {
+    text-decoration: none;
+    color: white;
+  }
+  footer .contact_icons_footer_section a {
+    text-decoration: none;
+  }
+  footer .contact_icons_footer_section .fab {
+    color: rgb(51, 209, 11);
+    margin: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 2px solid green;
+    border-radius: 50%;
+  }
+  footer .contact_icons_footer_section .fab:hover {
+    color: rgb(17, 75, 2);
+    border: 2px solid rgb(17, 75, 2);
+  }
