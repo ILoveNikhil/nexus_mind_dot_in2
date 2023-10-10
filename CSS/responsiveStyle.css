@@ -252,7 +252,7 @@ normal phone and last fro small phone  */
     }
 }
 /* for Very small phone 250-320  screen   */
-@media (max-width: 320px) {
+@media (max-width: 350px) {
     /* %%%%%%%%%%%%%%%%%% header logo and nav -- css ----  %%%%%%%%%%%%%%%% */
       /* humBurger =X toggle */
     #humBurger-menu{
