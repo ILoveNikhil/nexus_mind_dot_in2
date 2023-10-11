@@ -696,9 +696,6 @@ footer h4 {
 }
 /* for Very small phone 250-320  screen   */
 @media (max-width: 320px) {
-  body{
-    overflow-x: hidden;
-  }
     /* %%%%%%%%%%%%%%%%%% header logo and nav -- css ----  %%%%%%%%%%%%%%%% */
       /* humBurger =X toggle */
     #humBurger-menu{
