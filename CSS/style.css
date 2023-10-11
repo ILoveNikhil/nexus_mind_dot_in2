@@ -37,7 +37,7 @@ header nav{
 header nav .logo{
     display:flex;
     border-radius: 0.5rem;
-    box-shadow: 1px 1px 10px 1px rgb(107, 100, 100);
+    box-shadow: 0.1px 0.1px 5px 0.1px rgb(107, 100, 100);
     /* border: 1px solid rgb(238, 255, 0); */
     width: 10rem;
     height: 5rem;
@@ -213,7 +213,8 @@ margin: 1.2rem 0 0 0;
   .How_we_work article .number {
     font-size: 10rem;
     font-weight: 700;
-    color: rgb(36, 35, 35);
+    /* color: rgb(36, 35, 35); */
+    color: grey;
     text-align: center;
     margin: 0 0 -4.5rem 0;
 
@@ -533,14 +534,15 @@ footer .footer_logo h6 span{
 /* footer logo end */
 /* footer link start */
 footer .row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 0rem 0 0rem -2.5rem ;
+  display: grid;
+  grid-template-columns: 'auto auto';
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  /* margin: 0rem 0 0rem -2.5rem ; */
 }
-.footer_col{
+/* .footer_col{
   width: 10%;
-}
+} */
 footer h4 {
     color: rgb(51, 209, 11);
     font-size: 1.2rem;
